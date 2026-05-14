@@ -1,10 +1,5 @@
 import sys
-from scc_grouping import scc_grouping
-from utils import load_rank_data, extract_subset, build_inversion_matrix_from_ranks
-from insertion_sorting import insertion_sort_by_majority
-from borda_sorting import borda_sort
-from simulated_annealings import simulated_annealing_multi_run
-from sliding_window_rin import refine_after_sa, _exhaustive_search 
+from src import scc_grouping, load_rank_data, extract_subset, build_inversion_matrix_from_ranks, insertion_sort_by_majority, borda_sort, simulated_annealing_multi_run, refine_after_sa, _exhaustive_search 
 
 
 def run_pipeline(csv_path, m, window_size):

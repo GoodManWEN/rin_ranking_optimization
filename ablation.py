@@ -2,12 +2,7 @@ import sys
 import time
 import pandas as pd
 from collections import OrderedDict
-from utils import load_rank_data, extract_subset, random_order, evaluate
-from insertion_sorting import insertion_sort_by_majority
-from borda_sorting import borda_sort
-from simulated_annealings import simulated_annealing
-from sliding_window_rin import refine_after_sa
-from scc_grouping import scc_grouping
+from src import load_rank_data, extract_subset, random_order, evaluate, insertion_sort_by_majority, borda_sort, simulated_annealing, refine_after_sa, scc_grouping
 
 
 
